@@ -18,10 +18,16 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     text-transform: uppercase;
     font-family: "KomikaTitle-Tall", sans-serif;
     font-weight: 400;
+}
+
+*::-moz-selection {
+    color: black; 
+    background: rgb(242, 51, 34);
 }
 
 *::selection {
@@ -34,7 +40,9 @@ html {
 }
 
 body {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 203, 5, 0.8)), to(rgba(242, 51, 34, 0.8))), url('bg-min.jpg') ;
     background-image: linear-gradient(rgba(242, 203, 5, 0.8), rgba(242, 51, 34, 0.8)), url('bg-min.jpg') ;
     /* background-size: 250px; */
     background-size: cover;
@@ -49,10 +57,12 @@ body {
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     width: 40rem;
     /* border: 1px solid black; */
-    box-shadow: 0 0 1rem black;
+    -webkit-box-shadow: 0 0 1rem black;
+            box-shadow: 0 0 1rem black;
 }
 
 /*********************** 
@@ -76,15 +86,18 @@ h1 {
                 0 20px 20px rgba(0, 0, 0, 0.14902); 
     margin-bottom: 2rem;  
     font-size: 5rem;
-    animation: bounceIn 0.5s ease-out;
+    -webkit-animation: bounceIn 0.5s ease-out;
+            animation: bounceIn 0.5s ease-out;
 }
 
 h2 {
     font-family: "KomikaTitle";
     text-align: center;
     font-size: 2.8rem;
-    animation: fadeIn 0.5s ease-out 0.7s;
-    animation-fill-mode: backwards;
+    -webkit-animation: fadeIn 0.5s ease-out 0.7s;
+            animation: fadeIn 0.5s ease-out 0.7s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 
 h2::after {
@@ -112,15 +125,25 @@ input{
     text-align: center;
     background: rgba(0,0,0,0.3);
     border-radius: 30rem;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     color: white;
     outline: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
 }
 
 input:active, input:focus {
     background: rgba(0,0,0,0.8);
     outline: 0;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,0.5);
 }
 
 input::placeholder {
@@ -137,7 +160,8 @@ select {
     outline: 0;
     color: rgba(255,255,255,1);
     border-radius: 10rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
 }
 
 option[value] {
@@ -159,49 +183,90 @@ label {
     background: white;
     width: 50%;
     font-size: 2rem;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.8);
+            box-shadow: 0 5px 5px rgba(0,0,0,0.8);
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
 .btn:hover {
     background: white;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 5px rgba(0,0,0,0.8);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.8);
+            box-shadow: 0 5px 5px rgba(0,0,0,0.8);1
 }
 
 .btn:active, .btn:focus {
     background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.8);
 }
 
 input, select, label {
-    animation: fadeIn 0.5s ease-out 1s;
-    animation-fill-mode: backwards;
+    -webkit-animation: fadeIn 0.5s ease-out 1s;
+            animation: fadeIn 0.5s ease-out 1s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 
 /*********************** 
     KEYFRAMES
 ***********************/
-@keyframes bounceIn {
+@-webkit-keyframes bounceIn {
     0% {
-        transform: translateY(-4rem);
+        -webkit-transform: translateY(-4rem);
+                transform: translateY(-4rem);
         opacity: 0;
     }
 
     60% {
-        transform: translateY(0rem);
+        -webkit-transform: translateY(0rem);
+                transform: translateY(0rem);
         opacity: 0.5;
     }
 
     80% {
-        transform: translateY(-1rem);
+        -webkit-transform: translateY(-1rem);
+                transform: translateY(-1rem);
         opacity: 1;
     }
 
     100% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
     }
+}
+@keyframes bounceIn {
+    0% {
+        -webkit-transform: translateY(-4rem);
+                transform: translateY(-4rem);
+        opacity: 0;
+    }
+
+    60% {
+        -webkit-transform: translateY(0rem);
+                transform: translateY(0rem);
+        opacity: 0.5;
+    }
+
+    80% {
+        -webkit-transform: translateY(-1rem);
+                transform: translateY(-1rem);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes fadeIn {
