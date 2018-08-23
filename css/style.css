@@ -43,7 +43,7 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 203, 5, 0.8)), to(rgba(242, 51, 34, 0.8))), url('bg-min.jpg') ;
-    background-image: linear-gradient(rgba(242, 203, 5, 0.8), rgba(242, 51, 34, 0.8)), url('bg-min.jpg') ;
+    background-image: linear-gradient(rgba(242, 203, 5, 0.8), rgba(242, 51, 34, 0.8)), url('bgmin2.jpg') ;
     /* background-size: 250px; */
     background-size: cover;
     background-position: top;
@@ -86,8 +86,8 @@ h1 {
                 0 20px 20px rgba(0, 0, 0, 0.14902); 
     margin-bottom: 2rem;  
     font-size: 5rem;
-    -webkit-animation: bounceIn 0.5s ease-out 1s;
-            animation: bounceIn 0.5s ease-out 1s;
+    -webkit-animation: bounceIn 0.5s ease-out 2s;
+            animation: bounceIn 0.5s ease-out 2s;
     -webkit-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
 }
@@ -96,8 +96,8 @@ h2 {
     font-family: "KomikaTitle";
     text-align: center;
     font-size: 2.8rem;
-    -webkit-animation: fadeIn 0.5s ease-out 1.7s;
-            animation: fadeIn 0.5s ease-out 1.7s;
+    -webkit-animation: fadeIn 0.5s ease-out 2.7s;
+            animation: fadeIn 0.5s ease-out 2.7s;
     -webkit-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
 }
@@ -208,8 +208,8 @@ label {
 }
 /* All elements animate */
 input, select, label {
-    -webkit-animation: fadeIn 0.5s ease-out 2s;
-            animation: fadeIn 0.5s ease-out 2s;
+    -webkit-animation: fadeIn 0.5s ease-out 3s;
+            animation: fadeIn 0.5s ease-out 3s;
     -webkit-animation-fill-mode: backwards;
             animation-fill-mode: backwards;
 }
