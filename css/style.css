@@ -35,7 +35,7 @@ html {
 
 body {
     box-sizing: border-box;
-    background-image: linear-gradient(rgba(242, 203, 5, 0.8), rgba(242, 51, 34, 0.8)), url('bg.jpg') ;
+    background-image: linear-gradient(rgba(242, 203, 5, 0.8), rgba(242, 51, 34, 0.8)), url('bg-min.jpg') ;
     /* background-size: 250px; */
     background-size: cover;
     background-position: top;
